@@ -34,6 +34,7 @@ class ActorManager:
             """,
             (first_name, last_name),
         )
+        self.conn.commit()
 
     def all(self) -> List[Actor]:
         cursor = self.conn.cursor()
